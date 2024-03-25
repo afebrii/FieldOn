@@ -17,5 +17,13 @@ class ProfilActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        // Andika Febriansyah
+
+
+
+        // Andika Febriansyah
+        // Gilang
+        // Gerry
+        // Ilham
     }
 }
