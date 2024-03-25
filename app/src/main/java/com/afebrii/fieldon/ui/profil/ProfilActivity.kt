@@ -18,5 +18,12 @@ class ProfilActivity : AppCompatActivity() {
             insets
         }
         // Andika Febriansyah
+
+
+
+        // Andika Febriansyah
+        // Gilang
+        // Gerry
+        // Ilham
     }
 }
