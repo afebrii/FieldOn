@@ -1,4 +1,4 @@
-package com.afebrii.fieldon.profil
+package com.afebrii.fieldon.ui.profil
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge

@@ -1,4 +1,4 @@
-package com.afebrii.fieldon.ui.main.lapangan
+package com.afebrii.fieldon.ui.lapangan
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
