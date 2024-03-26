@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">FieldOn</string>
+    <string name="title_activity_pilih_profil">pilih_profil</string>
 </resources>
