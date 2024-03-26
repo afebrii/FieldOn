@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.afebrii.fieldon.R
+import com.afebrii.fieldon.ui.login.LoginActivity
 import com.afebrii.fieldon.ui.main.MainActivity
 
 class SplashScreenActivity : AppCompatActivity() {
@@ -22,7 +23,7 @@ class SplashScreenActivity : AppCompatActivity() {
         }
 
         Handler().postDelayed({
-            startActivity(Intent(this,MainActivity::class.java))
+            startActivity(Intent(this,LoginActivity::class.java))
             finish()
             overridePendingTransition(R.anim.static_animation, R.anim.zoom_out)
         }, 3000L)
