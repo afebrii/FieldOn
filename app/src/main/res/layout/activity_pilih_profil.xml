@@ -9,22 +9,51 @@
 
     <ImageView
         android:id="@+id/btn_pengelola1"
-        android:layout_width="118dp"
-        android:layout_height="137dp"
+        android:layout_width="148dp"
+        android:layout_height="168dp"
         android:layout_centerInParent="true"
         android:src="@drawable/pengelola1"
-        tools:layout_editor_absoluteX="70dp"
-        tools:layout_editor_absoluteY="167dp" />
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="170dp" />
 
     <ImageView
         android:id="@+id/btn_penyewa1"
-        android:layout_width="115dp"
-        android:layout_height="131dp"
+        android:layout_width="148dp"
+        android:layout_height="168dp"
         android:layout_centerInParent="true"
         android:src="@drawable/penyewa1"
-        tools:layout_editor_absoluteX="238dp"
-        tools:layout_editor_absoluteY="167dp" />
+        tools:layout_editor_absoluteX="220dp"
+        tools:layout_editor_absoluteY="170dp" />
 
+    <ImageView
+        android:id="@+id/btn_back"
+        android:layout_width="43dp"
+        android:layout_height="29dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/logoback"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="48dp" />
+
+    <ImageView
+        android:id="@+id/btn_masuk_pilih_user"
+        android:layout_width="320dp"
+        android:layout_height="46dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/btn_masuk"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="630dp" />
+
+    <TextView
+        android:id="@+id/tv_form"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/inter_medium"
+        android:text="Masuk Sebagai"
+        android:textColor="@color/black"
+        android:textSize="19dp"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="115dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
