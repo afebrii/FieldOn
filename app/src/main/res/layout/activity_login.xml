@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:layout_marginRight="20dp"
+    android:layout_marginLeft="20dp"
+    tools:context=".ui.login.LoginActivity">
+
+    <ImageView
+        android:id="@+id/img_logo_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo_2_2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"/>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_logo_login"
+        android:layout_marginTop="6dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/inter_bold"
+        android:text="MASUK"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/tv_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/inter_bold"
+        android:text="Username/Email"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/edt_username"
+        style="@style/EditTextGeneral.SecondaryVariant"
+        android:layout_below="@+id/tv_username"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/custom_edt_radius_bg"
+        android:fontFamily="@font/inter_regular"
+        android:hint="Masukkan Username/Email"
+        android:padding="12dp"
+        android:textSize="12sp"
+        android:inputType="text"/>
+
+    <TextView
+        android:id="@+id/tv_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_username"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/inter_bold"
+        android:text="Password"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/edt_password"
+        style="@style/EditTextGeneral.SecondaryVariant"
+        android:layout_below="@+id/tv_password"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/custom_edt_radius_bg"
+        android:fontFamily="@font/inter_regular"
+        android:hint="Masukkan Password"
+        android:padding="12dp"
+        android:textSize="12sp"
+        android:inputType="textPassword"/>
+
+    <LinearLayout
+        android:id="@+id/edt_daftar_akun"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_password"
+        android:layout_marginTop="8dp"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_regular"
+            android:text="Belum punya akun?"
+            android:textSize="12sp"
+            android:layout_marginRight="2dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_bold"
+            android:text="Daftar"
+            android:textColor="@color/primaryBlue"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_masuk"
+        style="@style/ButtonGeneral.PrimaryVariant"
+        android:layout_below="@+id/edt_daftar_akun"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/custom_button_bg"
+        android:fontFamily="@font/inter_semi_bold"
+        android:text="Masuk"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/tv_atau"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_masuk"
+        android:layout_marginTop="12dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/inter_semi_bold"
+        android:text="Atau"
+        android:textSize="14sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_google"
+        style="@style/ButtonGeneral.SecondaryVariant"
+        android:layout_below="@+id/tv_atau"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/custom_edt_radius_bg"
+        android:drawableLeft="@drawable/ic_google"
+        android:paddingStart="53dp"
+        android:paddingEnd="53dp"
+        android:text="Masuk dengan Google"
+        android:fontFamily="@font/inter_semi_bold"
+        android:textSize="16sp"
+        android:textAllCaps="false"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/image_login_ilustration"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
