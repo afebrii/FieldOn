@@ -1,8 +1,6 @@
-package com.afebrii.fieldon.ui.beranda.ui
-import android.content.Context
+package com.afebrii.fieldon.ui.beranda
 import android.os.Bundle
 import android.view.LayoutInflater
-import android.view.View
 import android.widget.LinearLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
