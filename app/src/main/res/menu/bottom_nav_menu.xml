@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/frame12" />
+
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:icon="@drawable/frame13" />
+
+    <item
+        android:id="@+id/navigation_notifications"
+        android:icon="@drawable/frame97" />
+    <item
+        android:id="@+id/navigation_notifications"
+        android:icon="@drawable/frame14" />
+    <item
+        android:id="@+id/navigation_notifications"
+        android:icon="@drawable/frame15" />
+
+</menu>
