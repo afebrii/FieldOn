@@ -19,6 +19,12 @@
             android:name=".ui.lapangan.LapanganActivity"
             android:exported="false" />
         <activity
+            android:name=".ui.detailLapangan.DetailBookingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.detailLapangan.DetailLapanganActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.login.LoginActivity"
             android:exported="false" />
         <activity
@@ -43,5 +49,4 @@
             </intent-filter>
         </activity>
     </application>
-
 </manifest>

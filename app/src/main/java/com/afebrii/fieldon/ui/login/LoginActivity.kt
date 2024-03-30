@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.afebrii.fieldon.R
+import com.afebrii.fieldon.ui.detailLapangan.DetailLapanganActivity
 import com.afebrii.fieldon.ui.main.MainActivity
 
 class LoginActivity : AppCompatActivity() {
@@ -31,8 +32,9 @@ class LoginActivity : AppCompatActivity() {
             val inputUsername = edtUsername.text.toString()
             val inputPassword = edtPassword.text.toString()
             if (inputUsername == "Rinjani" && inputPassword == "12345678"){
-                val Intent = Intent(this, MainActivity::class.java)
+                val Intent = Intent(this, DetailLapanganActivity::class.java)
                 startActivity(Intent)
+                finish()
             }else  {
                 Toast.makeText(this, "Username atau password salah", Toast.LENGTH_SHORT).show()
             }

@@ -2,8 +2,9 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.FieldOn" parent="Theme.Material3.DayNight">
         <!-- Customize your light theme here. -->
-         <item name="colorPrimary">@color/primaryBlue</item>
-         <item name="colorSecondary">@color/secondaryYellow</item>
+        <item name="colorPrimary">@color/primaryBlue</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/primaryBlue</item>
         <item name="colorButtonNormal">@color/white</item>
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
