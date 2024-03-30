@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="0dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingVertical="20dp"
+        android:paddingHorizontal="18dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kamis, 22 Maret 2024"
+            android:fontFamily="@font/inter_medium"
+            android:textSize="14sp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pilih waktu bermainmu (bisa lebih dari 1 jam)"
+            android:fontFamily="@font/inter_regular"
+            android:textSize="10dp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="5dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="22dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="61dp"
+                android:layout_height="30dp"
+                app:cardBackgroundColor="@color/grey"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="0dp"
+                android:layout_marginRight="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tersedia"
+                    android:fontFamily="@font/inter_regular"
+                    android:textSize="10sp"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="61dp"
+                android:layout_height="30dp"
+                app:cardBackgroundColor="@color/primaryBlue"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="0dp"
+                android:layout_marginRight="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Terpesan"
+                    android:fontFamily="@font/inter_regular"
+                    android:textSize="10sp"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="61dp"
+                android:layout_height="30dp"
+                app:cardBackgroundColor="@color/secondaryYellow"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="0dp"
+                android:layout_marginRight="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dipilih"
+                    android:fontFamily="@font/inter_bold"
+                    android:textSize="10sp"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"/>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/lapangan1"
+            android:layout_width="323dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="13.5dp"
+            app:cardBackgroundColor="@color/grey"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="0dp">
+
+            <TextView
+                android:id="@+id/tv_lapangan1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/inter_regular"
+                android:text="Lapangan 1"
+                android:textColor="@color/black"
+                android:textSize="10sp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/lapangan2"
+            android:layout_width="323dp"
+            android:layout_height="40dp"
+            app:cardBackgroundColor="@color/grey"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="0dp"
+            android:layout_marginBottom="13.5dp">
+
+            <TextView
+                android:id="@+id/tv_lapangan2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lapangan 2"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="10sp"
+                android:textColor="@color/black"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/lapangan3"
+            android:layout_width="323dp"
+            android:layout_height="40dp"
+            app:cardBackgroundColor="@color/grey"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="0dp"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:id="@+id/tv_lapangan3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lapangan 3"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="10sp"
+                android:textColor="@color/black"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_pilih_Lapangan"
+            android:layout_width="110dp"
+            android:layout_height="34dp"
+            android:background="@drawable/custom_buton_detail_pemesanan"
+            android:stateListAnimator="@null"
+            android:elevation="0dp"
+            android:text="Pilih Lapangan"
+            android:textAllCaps="false"
+            android:fontFamily="@font/inter_bold"
+            android:textSize="11dp"
+            android:layout_gravity="right"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
