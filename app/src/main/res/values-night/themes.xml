@@ -1,7 +1,43 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.FieldOn" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.FieldOn" parent="Theme.Material3.DayNight">
         <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <item name="colorPrimary">@color/primaryBlue</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/primaryBlue</item>
+        <item name="colorButtonNormal">@color/white</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!--    custom button continue onboarding-->
+    <style name="ButtonGeneral">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="ButtonGeneral.PrimaryVariant">
+        <item name="android:backgroundTint">@color/primaryBlue</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ButtonGeneral.SecondaryVariant">
+        <item name="android:backgroundTint">@color/white</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:radius">5dp</item>
+    </style>
+
+    <!--    custom edittext-->
+    <style name="EditTextGeneral">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="cornerRadius">56dp</item>
+    </style>
+
+    <style name="EditTextGeneral.SecondaryVariant">
+        <item name="android:textColor">@color/black</item>
+        <item name="fontFamily">@font/poppins_regular</item>
     </style>
 </resources>
