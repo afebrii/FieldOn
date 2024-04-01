@@ -1,10 +1,14 @@
 package com.afebrii.fieldon.ui.beranda
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.widget.LinearLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
 import com.afebrii.fieldon.R
+import com.afebrii.fieldon.ui.detailLapangan.DetailLapanganActivity
+import com.afebrii.fieldon.ui.kate_lap1.kategori_lap1
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class BerandaActivity: AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -31,6 +35,19 @@ class BerandaActivity: AppCompatActivity() {
 
             // Menambahkan kartu ke dalam LinearLayout
             linearLayout.addView(cardView)
+        }
+
+        // btn navigation masuk ke dalam fitur lapangan
+
+        val btnNavigationView : BottomNavigationView = findViewById(R.id.bottomNavigationView)
+        btnNavigationView.setOnNavigationItemSelectedListener { item ->
+            when (item.itemId) {
+                R.id.navigation_lapangan -> {
+                    val intent = Intent(this, kategori_lap1::class.java)
+                    startActivity(intent)
+                    true
+                }
+                else -> false
         }
     }
 }

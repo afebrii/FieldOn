@@ -230,7 +230,7 @@
         android:id="@+id/imag"
         android:layout_width="182dp"
         android:layout_height="24dp"
-        android:background="@drawable/Lagi_cari"
+        android:background="@drawable/lagi_cari"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.075"
