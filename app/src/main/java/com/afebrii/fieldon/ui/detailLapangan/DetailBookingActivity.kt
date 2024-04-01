@@ -16,6 +16,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.afebrii.fieldon.R
 import com.afebrii.fieldon.ui.main.MainActivity
+import com.afebrii.fieldon.ui.payment.ConfirmPaymentActivity
 import java.text.SimpleDateFormat
 import java.util.Calendar
 import java.util.Locale
@@ -41,6 +42,14 @@ class DetailBookingActivity : AppCompatActivity() {
         val ivBack : ImageView = findViewById(R.id.iv_back_pemesanan)
         ivBack.setOnClickListener{
             val Intent = Intent(this, DetailLapanganActivity::class.java)
+            startActivity(Intent)
+            finish()
+        }
+
+        // btn sewa sekarang to activity confirmpayment
+        val btnDetailLapangan : Button = findViewById(R.id.btn_detail_lapangan)
+        btnDetailLapangan.setOnClickListener{
+            val Intent = Intent(this, ConfirmPaymentActivity::class.java)
             startActivity(Intent)
             finish()
         }
