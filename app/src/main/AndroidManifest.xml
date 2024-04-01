@@ -13,11 +13,17 @@
         android:theme="@style/Theme.FieldOn"
         tools:targetApi="31">
         <activity
-            android:name=".ui.rinjani.profil_rinjani"
+            android:name=".ui.payment.PaymentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.payment.ConfirmPaymentActivity"
             android:exported="false" />
         <activity
             android:name=".ui.beranda.BerandaActivity"
             android:exported="false" />
+      <activity
+            android:name=".ui.live_chat.Live_ChatActivity"
+            android:exported="false"/>
         <activity
             android:name=".ui.lapangan.LapanganActivity"
             android:exported="false" />
@@ -42,6 +48,15 @@
         <activity
             android:name=".ui.main.MainActivity"
             android:exported="false" />
+        <activity
+            android:name=".ui.beranda.BerandaActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

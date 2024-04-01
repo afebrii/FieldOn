@@ -12,48 +12,62 @@
         android:layout_width="148dp"
         android:layout_height="168dp"
         android:layout_centerInParent="true"
+        android:layout_marginTop="196dp"
         android:src="@drawable/pengelola1"
-        tools:layout_editor_absoluteX="50dp"
-        tools:layout_editor_absoluteY="170dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.142"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/btn_penyewa1"
         android:layout_width="148dp"
         android:layout_height="168dp"
         android:layout_centerInParent="true"
+        android:layout_marginEnd="32dp"
         android:src="@drawable/penyewa1"
-        tools:layout_editor_absoluteX="220dp"
-        tools:layout_editor_absoluteY="170dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.296" />
 
     <ImageView
         android:id="@+id/btn_back"
-        android:layout_width="43dp"
-        android:layout_height="29dp"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
         android:layout_centerInParent="true"
+        android:layout_marginStart="40dp"
         android:src="@drawable/logoback"
-        tools:layout_editor_absoluteX="50dp"
-        tools:layout_editor_absoluteY="48dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.064" />
 
-    <ImageView
-        android:id="@+id/btn_masuk_pilih_user"
-        android:layout_width="320dp"
-        android:layout_height="46dp"
-        android:layout_centerInParent="true"
+    <ImageButton
+        android:id="@+id/btn_masuk"
+        android:layout_width="313dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="728dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:scaleType="fitXY"
         android:src="@drawable/btn_masuk"
-        tools:layout_editor_absoluteX="50dp"
-        tools:layout_editor_absoluteY="630dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tv_form"
         android:layout_width="150dp"
         android:layout_height="30dp"
         android:layout_centerInParent="true"
+        android:layout_marginTop="136dp"
+        android:layout_marginEnd="208dp"
         android:fontFamily="@font/inter_medium"
         android:text="Masuk Sebagai"
         android:textColor="@color/black"
         android:textSize="19dp"
-        tools:layout_editor_absoluteX="50dp"
-        tools:layout_editor_absoluteY="115dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
