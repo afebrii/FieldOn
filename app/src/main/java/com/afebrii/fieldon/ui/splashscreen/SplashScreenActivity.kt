@@ -15,6 +15,7 @@ import com.afebrii.fieldon.ui.detailLapangan.DetailBookingActivity
 import com.afebrii.fieldon.ui.detailLapangan.DetailLapanganActivity
 import com.afebrii.fieldon.ui.login.LoginActivity
 import com.afebrii.fieldon.ui.main.MainActivity
+import com.afebrii.fieldon.ui.payment.ConfirmPaymentActivity
 import java.text.SimpleDateFormat
 import java.util.Calendar
 import java.util.Locale
@@ -32,7 +33,7 @@ class SplashScreenActivity : AppCompatActivity() {
         }
 
         Handler().postDelayed({
-            startActivity(Intent(this,LoginActivity::class.java))
+            startActivity(Intent(this,DetailLapanganActivity::class.java))
             finish()
             overridePendingTransition(R.anim.static_animation, R.anim.zoom_out)
         }, 3000L)
