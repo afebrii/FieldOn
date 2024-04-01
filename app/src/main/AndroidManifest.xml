@@ -21,6 +21,9 @@
         <activity
             android:name=".ui.beranda.BerandaActivity"
             android:exported="false" />
+      <activity
+            android:name=".ui.live_chat.Live_ChatActivity"
+            android:exported="false"/>
         <activity
             android:name=".ui.lapangan.LapanganActivity"
             android:exported="false" />
@@ -46,7 +49,7 @@
             android:name=".ui.main.MainActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.splashscreen.SplashScreenActivity"
+            android:name=".ui.beranda.BerandaActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
