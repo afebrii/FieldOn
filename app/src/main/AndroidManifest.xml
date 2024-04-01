@@ -16,9 +16,6 @@
             android:name=".ui.rinjani.profil_rinjani"
             android:exported="false" />
         <activity
-            android:name=".profil_rinjani1"
-            android:exported="false" />
-        <activity
             android:name=".ui.beranda.BerandaActivity"
             android:exported="false" />
         <activity
@@ -45,15 +42,6 @@
         <activity
             android:name=".ui.main.MainActivity"
             android:exported="false" />
-        <activity
-            android:name=".ui.beranda.ui.BerandaActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
     </application>
 
 </manifest>
