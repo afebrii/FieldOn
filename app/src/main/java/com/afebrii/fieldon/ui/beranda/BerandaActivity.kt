@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
 import com.afebrii.fieldon.R
 import com.afebrii.fieldon.ui.kategoriLapangan.KategoriLapanganActivity1
+import com.afebrii.fieldon.ui.pelatihan.PelatihanActivity
 import com.afebrii.fieldon.ui.pemesanan.PesananActivity
 import com.afebrii.fieldon.ui.rinjani.ProfileRinjaniActivity
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -49,7 +50,7 @@ class BerandaActivity: AppCompatActivity() {
                     true
                 }
                 R.id.navigation_pelatihan -> {
-                    val intent = Intent(this, KategoriLapanganActivity1::class.java)
+                    val intent = Intent(this, PelatihanActivity::class.java)
                     startActivity(intent)
                     true
                 }

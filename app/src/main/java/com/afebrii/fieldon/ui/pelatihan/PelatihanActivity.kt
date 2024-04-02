@@ -1,28 +1,46 @@
-package com.afebrii.fieldon.ui.pemesanan
+package com.afebrii.fieldon.ui.pelatihan
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
+import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.afebrii.fieldon.R
 import com.afebrii.fieldon.ui.beranda.BerandaActivity
+import com.afebrii.fieldon.ui.detailLapangan.DetailLapanganActivity
 import com.afebrii.fieldon.ui.kategoriLapangan.KategoriLapanganActivity1
-import com.afebrii.fieldon.ui.pelatihan.PelatihanActivity
+import com.afebrii.fieldon.ui.pemesanan.PesananActivity
 import com.afebrii.fieldon.ui.rinjani.ProfileRinjaniActivity
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
-class PesananActivity : AppCompatActivity() {
+class PelatihanActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_pesanan)
+        setContentView(R.layout.activity_pelatihan)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+        // ic back
+        val ivBack : ImageView = findViewById(R.id.iv_back_pelatihan)
+        ivBack.setOnClickListener{
+            val Intent = Intent(this, BerandaActivity::class.java)
+            startActivity(Intent)
+            finish()
+        }
+
+//        val btnDaftarPelatihan : Button = findViewById(R.id.btn_daftar_pelatihan)
+//        btnDaftarPelatihan.setOnClickListener{
+//            val Intent = Intent(this, BerandaActivity::class.java)
+//            startActivity(Intent)
+//            finish()
+//        }
 
         // INTENT navigation masuk ke dalam fitur lapangan
         val bottomNavigationView: BottomNavigationView = findViewById(R.id.bottomNavigationView)
@@ -34,8 +52,8 @@ class PesananActivity : AppCompatActivity() {
                     startActivity(intent)
                     true
                 }
-                R.id.navigation_pelatihan -> {
-                    val intent = Intent(this, PelatihanActivity::class.java)
+                R.id.navigation_pemesanan -> {
+                    val intent = Intent(this, PesananActivity::class.java)
                     startActivity(intent)
                     true
                 }
