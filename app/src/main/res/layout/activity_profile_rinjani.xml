@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/primaryBlue"
-    tools:context=".ui.rinjani.profil_rinjani">
+    tools:context=".ui.rinjani.ProfileRinjaniActivity">
 
     <ImageButton
         android:id="@+id/btn_ubahprofil"
@@ -78,7 +78,7 @@
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="90dp"
         android:background="@color/white"
         app:menu="@menu/bottom_nav_menu"
         app:itemIconSize="43dp"

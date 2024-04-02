@@ -9,9 +9,8 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.afebrii.fieldon.R
 import com.afebrii.fieldon.ui.login.LoginActivity
-import com.afebrii.fieldon.ui.pilihProfile.PilihProfilActivity
-import java.util.Calendar
-import java.util.Locale
+import com.afebrii.fieldon.ui.register.RegisterActivity
+import com.afebrii.fieldon.ui.rinjani.ProfileRinjaniActivity
 
 class SplashScreenActivity : AppCompatActivity() {
 
@@ -26,7 +25,7 @@ class SplashScreenActivity : AppCompatActivity() {
         }
 
         Handler().postDelayed({
-            startActivity(Intent(this,LoginActivity::class.java))
+            startActivity(Intent(this, LoginActivity::class.java))
             finish()
             overridePendingTransition(R.anim.static_animation, R.anim.zoom_out)
         }, 3000L)

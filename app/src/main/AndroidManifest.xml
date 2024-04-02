@@ -13,6 +13,18 @@
         android:theme="@style/Theme.FieldOn"
         tools:targetApi="31">
         <activity
+            android:name=".ui.rinjani.ProfileRinjaniActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.pemesanan.PesananActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.kategoriLapangan.KategoriLapanganActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".ui.kategoriLapangan.KategoriLapanganActivity1"
+            android:exported="false" />
+        <activity
             android:name=".ui.payment.PaymentActivity"
             android:exported="false" />
         <activity
@@ -21,9 +33,9 @@
         <activity
             android:name=".ui.beranda.BerandaActivity"
             android:exported="false" />
-      <activity
+        <activity
             android:name=".ui.live_chat.Live_ChatActivity"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".ui.lapangan.LapanganActivity"
             android:exported="false" />
