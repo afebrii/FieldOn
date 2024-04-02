@@ -1,41 +1,36 @@
-package com.afebrii.fieldon.ui.beranda
+package com.afebrii.fieldon.ui.kategoriLapangan
+
 import android.content.Intent
 import android.os.Bundle
-import android.view.LayoutInflater
-import android.widget.LinearLayout
+import android.widget.Button
+import android.widget.ImageButton
+import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.cardview.widget.CardView
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
 import com.afebrii.fieldon.R
-import com.afebrii.fieldon.ui.kategoriLapangan.KategoriLapanganActivity1
+import com.afebrii.fieldon.ui.beranda.BerandaActivity
 import com.afebrii.fieldon.ui.pemesanan.PesananActivity
 import com.afebrii.fieldon.ui.rinjani.ProfileRinjaniActivity
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
-class BerandaActivity: AppCompatActivity() {
+class KategoriLapanganActivity1 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_beranda)
+        enableEdgeToEdge()
+        setContentView(R.layout.activity_kategori_lapangan1)
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
+            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
+            insets
+        }
 
-        // Mendapatkan referensi ke LinearLayout di dalam HorizontalScrollView
-        val linearLayout: LinearLayout = findViewById(R.id.linear_layout)
-
-        // Membuat dan menambahkan beberapa kartu secara dinamis
-        for (i in 0 until 5) {
-            // Membuat objek CardView
-            val cardView = CardView(this)
-            val layoutParams = LinearLayout.LayoutParams(
-                LinearLayout.LayoutParams.WRAP_CONTENT,
-                LinearLayout.LayoutParams.WRAP_CONTENT
-            )
-            layoutParams.setMargins(16, 16, 16, 16) // Atur margin sesuai kebutuhan
-            cardView.layoutParams = layoutParams
-
-            // Menginflasi layout kartu dari file XML
-            val cardLayout = LayoutInflater.from(this).inflate(R.layout.card_layout, null)
-            cardView.addView(cardLayout)
-
-            // Menambahkan kartu ke dalam LinearLayout
-            linearLayout.addView(cardView)
+        // btn kembali to beranda
+        val btnFutsal : ImageButton = findViewById(R.id.btn_futsal)
+        btnFutsal.setOnClickListener{
+            val Intent = Intent(this, KategoriLapanganActivity2::class.java)
+            startActivity(Intent)
+            finish()
         }
 
         // INTENT navigation masuk ke dalam fitur lapangan
@@ -43,8 +38,8 @@ class BerandaActivity: AppCompatActivity() {
 
         bottomNavigationView.setOnNavigationItemSelectedListener { item ->
             when (item.itemId) {
-                R.id.navigation_lapangan -> {
-                    val intent = Intent(this, KategoriLapanganActivity1::class.java)
+                R.id.navigation_home -> {
+                    val intent = Intent(this, BerandaActivity::class.java)
                     startActivity(intent)
                     true
                 }
@@ -66,10 +61,6 @@ class BerandaActivity: AppCompatActivity() {
                 else -> false
             }
         }
+
     }
 }
-
-
-
-
-

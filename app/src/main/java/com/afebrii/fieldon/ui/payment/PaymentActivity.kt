@@ -3,6 +3,7 @@ package com.afebrii.fieldon.ui.payment
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -19,6 +20,14 @@ class PaymentActivity : AppCompatActivity() {
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
+        }
+
+        //        ic back
+        val ivBack : ImageView = findViewById(R.id.iv_back_pemesanan)
+        ivBack.setOnClickListener{
+            val Intent = Intent(this, BerandaActivity::class.java)
+            startActivity(Intent)
+            finish()
         }
 
         // btn kembali to beranda

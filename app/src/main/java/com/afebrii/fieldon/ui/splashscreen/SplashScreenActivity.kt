@@ -3,22 +3,14 @@ package com.afebrii.fieldon.ui.splashscreen
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
-import android.widget.Button
-import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.compose.material3.DatePickerDialog
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.afebrii.fieldon.R
-import com.afebrii.fieldon.ui.detailLapangan.DetailBookingActivity
-import com.afebrii.fieldon.ui.detailLapangan.DetailLapanganActivity
 import com.afebrii.fieldon.ui.login.LoginActivity
-import com.afebrii.fieldon.ui.main.MainActivity
-import com.afebrii.fieldon.ui.payment.ConfirmPaymentActivity
-import java.text.SimpleDateFormat
-import java.util.Calendar
-import java.util.Locale
+import com.afebrii.fieldon.ui.register.RegisterActivity
+import com.afebrii.fieldon.ui.rinjani.ProfileRinjaniActivity
 
 class SplashScreenActivity : AppCompatActivity() {
 
@@ -33,7 +25,7 @@ class SplashScreenActivity : AppCompatActivity() {
         }
 
         Handler().postDelayed({
-            startActivity(Intent(this,DetailLapanganActivity::class.java))
+            startActivity(Intent(this, LoginActivity::class.java))
             finish()
             overridePendingTransition(R.anim.static_animation, R.anim.zoom_out)
         }, 3000L)

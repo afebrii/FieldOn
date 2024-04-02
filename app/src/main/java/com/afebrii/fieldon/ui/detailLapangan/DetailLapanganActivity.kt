@@ -18,6 +18,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.viewpager2.widget.ViewPager2
 import com.afebrii.fieldon.R
+import com.afebrii.fieldon.ui.beranda.BerandaActivity
 import com.afebrii.fieldon.ui.main.MainActivity
 import com.google.android.material.tabs.TabLayout
 import java.text.SimpleDateFormat
@@ -56,7 +57,7 @@ class DetailLapanganActivity : AppCompatActivity() {
 //        ic back
         val ivBack : ImageView = findViewById(R.id.iv_back)
         ivBack.setOnClickListener{
-            val Intent = Intent(this, MainActivity::class.java)
+            val Intent = Intent(this, BerandaActivity::class.java)
             startActivity(Intent)
             finish()
         }
