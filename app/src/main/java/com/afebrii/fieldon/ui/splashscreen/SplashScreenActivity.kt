@@ -8,6 +8,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.afebrii.fieldon.R
+import com.afebrii.fieldon.ui.detailLapangan.DetailLapanganActivity
+import com.afebrii.fieldon.ui.detailPelatihan.DetailPelatihanActivity
 import com.afebrii.fieldon.ui.login.LoginActivity
 import com.afebrii.fieldon.ui.register.RegisterActivity
 import com.afebrii.fieldon.ui.rinjani.ProfileRinjaniActivity
