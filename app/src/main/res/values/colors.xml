@@ -2,6 +2,11 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="grey">#FFDFDFDF</color>
+    <color name="greyViewPagerDetail">#FF908C95</color>
     <color name="primaryBlue">#FF3124BE</color>
     <color name="secondaryYellow">#FFFBDA1B</color>
+    <color name="yellowConfirmPayment">#FFFEF1BF</color>
+    <color name="yellowPayment">#FFFEE480</color>
+    <color name="blueLink">#FF0068E1</color>
 </resources>

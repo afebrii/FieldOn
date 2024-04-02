@@ -4,13 +4,15 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.afebrii.fieldon.R
-import com.afebrii.fieldon.ui.main.MainActivity
+import com.afebrii.fieldon.ui.pilihProfile.PilihProfilActivity
+import com.afebrii.fieldon.ui.register.RegisterActivity
 
 class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -31,13 +33,21 @@ class LoginActivity : AppCompatActivity() {
             val inputUsername = edtUsername.text.toString()
             val inputPassword = edtPassword.text.toString()
             if (inputUsername == "Rinjani" && inputPassword == "12345678"){
-                val Intent = Intent(this, MainActivity::class.java)
-                startActivity(Intent)
+                val intent = Intent(this, PilihProfilActivity::class.java)
+                startActivity(intent)
+                finish()
             }else  {
                 Toast.makeText(this, "Username atau password salah", Toast.LENGTH_SHORT).show()
             }
         }
 
 //        intent Daftar user
+        val tvDaftar : TextView = findViewById(R.id.tv_daftar)
+        tvDaftar.setOnClickListener{
+            val Intent = Intent(this, RegisterActivity::class.java)
+            startActivity(Intent)
+            finish()
+        }
+
     }
 }

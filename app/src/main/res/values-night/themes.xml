@@ -3,7 +3,8 @@
     <style name="Base.Theme.FieldOn" parent="Theme.Material3.DayNight">
         <!-- Customize your dark theme here. -->
         <item name="colorPrimary">@color/primaryBlue</item>
-        <item name="colorSecondary">@color/secondaryYellow</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/primaryBlue</item>
         <item name="colorButtonNormal">@color/white</item>
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
@@ -39,5 +40,4 @@
         <item name="android:textColor">@color/black</item>
         <item name="fontFamily">@font/poppins_regular</item>
     </style>
-
 </resources>
